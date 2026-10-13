@@ -1,0 +1,5 @@
+# large source videos — trimmed clips are tracked, raw downloads are not
+*.raw.mp4
+# scratch renders / verification screenshots
+_*.png
+_*.html

@@ -1,0 +1,97 @@
+{
+ "note": "Fetch these 3 short-clip mp4s from the cluster into project_page/assets/clips/. info_time_sec/event_time_sec are set later by scrubbing.",
+ "demos": [
+  {
+   "task": "IC",
+   "category": "item_price",
+   "clip_uid": "proact_clip_8ada04ca-d49e-5c12-95de-77c5a4faa0bd",
+   "source_video_uid": "369af9b2-376b-44ff-90c8-3d53ec859681",
+   "cluster_path": "/dss/mcmlscratch/0F/di97cet/datasets/ego4d/v2/processed_v3/video_capture/short_videos/proact_clip_8ada04ca-d49e-5c12-95de-77c5a4faa0bd.mp4",
+   "local_file": "assets/clips/ic_8ada04ca.mp4",
+   "clip_window_sec": [
+    88.32,
+    268.32
+   ],
+   "clip_duration_sec": 180.0,
+   "info_time_sec": null,
+   "event_time_sec": null,
+   "qa_id": "proact_qa_776d5f1e-400e-406e-b2a7-9b5011fb4aa9",
+   "question": "How much was the Pop Mandalorian item?",
+   "options": [
+    "$20",
+    "$11",
+    "$9.50",
+    "$10"
+   ],
+   "correct": "$10",
+   "grounding": "The visible text on the Mandalorian item includes \u201cPop, Mandalorian, $10.\u201d"
+  },
+  {
+   "task": "ST",
+   "category": "state.count_active_at_end.on_or_open",
+   "clip_uid": "proact_clip_ee82e071-13bd-53b5-9acc-5899aef60ab0",
+   "source_video_uid": "9fabfbc8-1d5c-495e-9bb2-03795f0145ae",
+   "cluster_path": "/home/vault/b240dd/b240dd16/meikel/datasets/ego4d/v2/processed_v5/state_tracking/short_videos/proact_clip_ee82e071-13bd-53b5-9acc-5899aef60ab0.mp4",
+   "local_file": "assets/clips/st_ee82e071.mp4",
+   "clip_window_sec": [
+    0.0,
+    179.29
+   ],
+   "clip_duration_sec": 179.3,
+   "info_time_sec": null,
+   "event_time_sec": null,
+   "qa_id": "proact_qa_f30358fd-ac77-4b11-aa19-31457788902b",
+   "question": "After the final state change shown, how many objects remained on or open?",
+   "options": [
+    "1 object.",
+    "2 objects.",
+    "0 objects.",
+    "5 objects."
+   ],
+   "correct": "5 objects.",
+   "grounding": null
+  },
+  {
+   "task": "LT",
+   "category": "object.placement_location",
+   "clip_uid": "proact_clip_548db0ff-b476-58f8-8e41-440a71dd49b7",
+   "source_video_uid": null,
+   "cluster_path": "alex:/home/vault/b240dd/b240dd16/meikel/datasets/ego4d/v2/processed_v5/object_tracking/short_videos/proact_clip_548db0ff-b476-58f8-8e41-440a71dd49b7.mp4",
+   "local_file": "assets/clips/lt.mp4",
+   "clip_window_sec": [
+    105.5,
+    138.5
+   ],
+   "clip_duration_sec": 33.0,
+   "info_time_sec": null,
+   "event_time_sec": null,
+   "qa_id": "proact_qa_ea8d3ce2-f73e-4af6-864b-d4ab92fa798b",
+   "question": "Two identical white tube lids sat on the table. Which one did I pick back up?",
+   "options": [
+    "The blue tube's lid",
+    "The yellow tube's lid",
+    "Both lids",
+    "Neither \u2014 I left them"
+   ],
+   "correct": "The yellow tube's lid",
+   "grounding": "Advisor's paint-tubes clip. Real lid annotations: blue tube's white lid placed on table at 20.9s (stays); yellow tube's white lid placed on table at 107.0s and picked up at 137.1s. Both are indistinguishable white tube tops.",
+   "shown_objects": [
+    "blue tube lid",
+    "yellow tube lid (place->pickup)",
+    "big painted stone",
+    "small stone"
+   ],
+   "note_faithful": "all 4 objects active in window 105.5-138.5 shown"
+  }
+ ],
+ "alternatives": {
+  "IC": [
+   "proact_clip_aa4c8d2f-ada5-5e4a-a5c4-20e768d5b93e (room label = 'fuego')",
+   "proact_clip_81e5ed32-bdc4-59ed-88f7-00570e0142eb (which court = Court 6)"
+  ],
+  "LT": [
+   "proact_clip_b5303627-a23b-5ce6-9d15-ea9104a6c334 (first-location, biohazard-bottle landmark)",
+   "proact_clip_73299ad5-0c47-5ed0-96f2-7c97dde58ad0 (last-location, blue tubes)"
+  ]
+ }
+}
