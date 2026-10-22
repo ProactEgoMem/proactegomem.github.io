@@ -1101,8 +1101,8 @@ td.ty{text-align:left;color:var(--dim);font-size:.78rem}
       <figure class="pr" id="pr">
         <div class="pr__card">
           <div class="seg seg--sm pr__view" id="prView" role="tablist" aria-label="radar view">
-            <button data-view="models" role="tab" aria-selected="true">13 models</button>
-            <button data-view="fam" role="tab" aria-selected="false">4 families</button>
+            <button data-view="models" role="tab" aria-selected="false">13 models</button>
+            <button data-view="fam" role="tab" aria-selected="true">4 families</button>
           </div>
           <div class="pr__scroll">
             <svg class="pr__svg" viewBox="0 0 640 580" role="img" aria-labelledby="prSvgT" aria-describedby="prSvgD">
@@ -1896,7 +1896,7 @@ const PR_FAXES={
 };
 /* the paper's vertex marker per family */
 const PR_FMARK={"Proprietary":"circle","Open Source":"square","VidLLM":"triangle","Streaming":"diamond"};
-let prView="models";
+let prView="fam";
 const prFam=()=>prView==="fam";
 const prSeries=()=>prFam()?PR_FAMS:PR_MODELS;
 const prAxesOf=lvl=>(prFam()?PR_FAXES:PR_AXES)[lvl];
